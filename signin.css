@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* height: 100vh; */
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    background-color:#212121;
+  }
+   main{
+    /* border: 2px solid red; */
+    width: 100%;
+    height:120vh ;
+    display: flex;
+    justify-content: center;
+   }
+.pic{
+  position: relative;
+  left: 20px;
+}
+  .back input{
+    position: fixed;
+    background-color: #ff511c;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 40px;
+  }
+  .back input:hover{
+    background:#eeeeee;
+    color: #000;
+    
+  }
+  .container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    box-shadow: -20px 20px 60px #000, -20px -20px 0px #212121;
+}
+
+  /* .form:hover{
+    border: 1px solid #424242;
+  } */
+  .title {
+    color: #fff;
+    margin: 3rem 0;
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  
+  .input {
+    margin: 0.5rem 0;
+    padding: 1rem 0.5rem;
+    width: 20rem;
+    background-color: inherit;
+    color: #fff;
+    border: none;
+    outline: none;
+  }
+  
+  .username {
+    border-bottom: 1px solid #fff;
+    transition: all 400ms;
+  }
+  
+  .username:hover {
+    background-color: #424242;
+    border: none;
+    border-radius: 0.5rem;
+  }
+  
+  .password {
+    border-bottom: 1px solid #fff;
+    transition: all 400ms;
+  }
+  
+  .password:hover {
+    background-color: #424242;
+    border: none;
+    border-radius: 0.5rem;
+  }
+  
+  .btn {
+    margin-top: 3rem;
+    background-color: #ff511c;
+    color: #fff;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1.2rem;
+    transition: all 400ms;
+    box-shadow: none;
+  }
+  
+  .btn:hover {
+    background-color: #eeeeee;
+    color: #212121;
+  }
+  #number , #verificationcode{
+    width: calc(100%-24px);
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #fff;
+    outline: none;
+  }
+  #recaptcha-container{
+    margin-bottom: 5px;
+  }
+  #send , #verify{
+      width: 100%;
+      height: 40px;
+      outline: none;
+  }
+  .p-conf , .n-conf{
+    display: none;
+    width: calc(100%-22px);
+    background-color: #ff511c;
+    color: #fff;
+    margin: 4px 0;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 4px;
+
+  }
+  .n-conf{
+    background-color: red;    
+  }
+  @media (max-width:768px){
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  

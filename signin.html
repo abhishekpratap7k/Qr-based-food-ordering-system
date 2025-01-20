@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+    <header>
+        <nav class="back">
+            <a href="index.html"><input type="button" value="Back"></a>
+        </nav>
+    </header>
+    <main>   
+        <div class="container">
+            <div class="pic">
+                <img src="/img/form.png" alt="" width="250px">
+            </div>
+            <form class="form" action="">
+                <p class="title">Login Form</p>
+                <input placeholder="User Name" class="username input" type="text">
+                <input placeholder="Phone Number" class="password input" id="number" type="text">
+                <!-- <div id="recaptcha-container"></div> -->
+                <button class="btn" type="button" id="send" style="width: 80px;" onclick="phoneAuth()">Login</button>
+            </form>
+            <div id="verifier" style="display: none;">
+                <input type="text" id="verificationcode" placeholder="OTP Code">
+                <input type="button" id="verify" value="Verify" onclick="codeverify()">
+                <div class="p-conf" style="display: none;">Number verified</div>
+                <div class="n-conf" style="display: none;">OTP ERROR</div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="sigin.js"></script>
+</body>
+</html>
